@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-chai",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ember cli addon for use of Chai.",
   "directories": {
     "doc": "doc",
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/jonathanKingston/ember-cli-chai.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Jonathan kingston",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
@@ -35,7 +35,8 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "chai"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
