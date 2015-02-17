@@ -1,6 +1,15 @@
 # Ember-cli-chai
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon wrapper for [Chaijs](https://github.com/chaijs/chai) assertion library.
+
+```
+ember install:addon ember-cli-chai
+```
+
+Use
+```
+import { assert } from 'chai';
+```
 
 ## Installation
 

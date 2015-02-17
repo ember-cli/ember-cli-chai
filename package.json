@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-chai",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember cli addon for use of Chai.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -39,5 +39,7 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "dependencies": {
   }
 }
