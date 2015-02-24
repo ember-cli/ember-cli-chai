@@ -10,9 +10,22 @@ ember install:addon ember-cli-chai
 ```
 
 ## Use
+
+**Assert**
+
 ```
 import { assert } from 'chai';
 ```
+
+**Expect**
+
+```
+import { expect } from 'chai';
+```
+
+**Should usage warning** - by using should, you will likely cause issues with the rest of your tests.
+Should works by modifying native `Object.prototype` which will leak into every module.
+Developers should consider using `assert` or `expect` instead [Further explanation](https://github.com/switchfly/ember-cli-mocha/issues/14#issuecomment-75466055).
 
 ## Licence
 
