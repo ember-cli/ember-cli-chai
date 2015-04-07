@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-chai",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Ember cli addon for use of Chai.",
   "directories": {
     "doc": "doc",
