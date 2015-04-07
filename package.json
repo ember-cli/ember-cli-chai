@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-chai",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Ember cli addon for use of Chai.",
   "directories": {
     "doc": "doc",
@@ -16,6 +16,10 @@
     "node": ">= 0.10.0"
   },
   "author": "Jonathan kingston",
+  "main": "index.js",
+  "ember-addon": {
+    "main": "index.js"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
