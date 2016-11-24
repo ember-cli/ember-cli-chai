@@ -4,6 +4,7 @@
 var path = require('path');
 var resolve = require('resolve');
 var Funnel = require('broccoli-funnel');
+var MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cli-chai',
@@ -15,16 +16,21 @@ module.exports = {
       app = app.app;
     }
 
-    app.import('vendor/chai/chai.js', {
-      type: 'test'
-    });
+    app.import('vendor/chai/chai.js', { type: 'test' });
+    app.import('vendor/shims/chai.js', { type: 'test' });
   },
 
-  treeForVendor: function(/* tree */) {
+  treeForVendor: function(tree) {
     var chaiPath = path.dirname(resolve.sync('chai'));
-    return new Funnel(chaiPath, {
+    var chaiTree = new Funnel(chaiPath, {
       files: ['chai.js'],
       destDir: '/chai',
+    });
+
+    var trees = [tree, chaiTree];
+
+    return new MergeTrees(trees, {
+      annotation: 'ember-cli-chai: treeForVendor'
     });
   }
 };

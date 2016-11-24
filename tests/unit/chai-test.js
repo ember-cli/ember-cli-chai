@@ -1,8 +1,5 @@
-/* global chai */
-
 import { module, test } from 'qunit';
-
-let { expect } = chai;
+import { expect } from 'chai';
 
 module('Chai.js');
 
