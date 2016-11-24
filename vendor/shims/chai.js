@@ -1,5 +1,9 @@
 /* global self, define */
 
+// Declare `expect` as a global here instead of as a var in individual tests.
+// This avoids jshint warnings re: `Redefinition of 'expect'`.
+self.expect = self.chai.expect;
+
 (function() {
   function vendorModule() {
     'use strict';
