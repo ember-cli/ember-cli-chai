@@ -20,6 +20,12 @@ module.exports = {
     app.import('vendor/shims/chai.js', { type: 'test' });
   },
 
+  treeForAddon: function() {
+    if (this.app.tests) {
+      return this._super.treeForAddon.apply(this, arguments);
+    }
+  },
+
   treeForVendor: function(tree) {
     var chaiPath = path.dirname(resolve.sync('chai'));
     var chaiTree = new Funnel(chaiPath, {
