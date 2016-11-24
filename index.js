@@ -20,6 +20,10 @@ module.exports = {
     this.importChaiJQuery =
       (dependencies.indexOf('chai-jquery') !== -1 || devDependencies.indexOf('chai-jquery') !== -1) &&
       checker.for('chai-jquery', 'npm').satisfies('^2.0.0');
+
+    this.importChaiDOM =
+      (dependencies.indexOf('chai-dom') !== -1 || devDependencies.indexOf('chai-dom') !== -1) &&
+      checker.for('chai-dom', 'npm').satisfies('^1.0.0');
   },
 
   included: function included(app) {
@@ -34,6 +38,9 @@ module.exports = {
 
     if (this.importChaiJQuery) {
       app.import('vendor/chai/chai-jquery.js', { type: 'test' });
+
+    } else if (this.importChaiDOM) {
+      app.import('vendor/chai/chai-dom.js', { type: 'test' });
     }
   },
 
@@ -60,6 +67,15 @@ module.exports = {
       });
 
       trees.push(chaiJQueryTree);
+
+    } else if (this.importChaiDOM) {
+      var chaiDOMPath = path.dirname(resolve.sync('chai-dom', { basedir: this.project.root }));
+      var chaiDOMTree = new Funnel(chaiDOMPath, {
+        files: ['chai-dom.js'],
+        destDir: '/chai',
+      });
+
+      trees.push(chaiDOMTree);
     }
 
     return new MergeTrees(trees, {
