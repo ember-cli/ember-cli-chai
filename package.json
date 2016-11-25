@@ -8,6 +8,10 @@
   ],
   "license": "MIT",
   "author": "Jonathan kingston",
+  "files": [
+    "vendor",
+    "index.js"
+  ],
   "directories": {
     "doc": "doc",
     "test": "tests"
