@@ -2,21 +2,29 @@
   "name": "ember-cli-chai",
   "version": "0.0.10",
   "description": "Ember cli addon for use of Chai.",
+  "keywords": [
+    "chai",
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "author": "Jonathan kingston",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
+  "repository": "https://github.com/ember-cli/ember-cli-chai.git",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember test"
   },
-  "repository": "https://github.com/ember-cli/ember-cli-chai.git",
-  "engines": {
-    "node": ">= 0.12.0"
+  "dependencies": {
+    "broccoli-funnel": "^1.0.9",
+    "broccoli-merge-trees": "^1.1.5",
+    "chai": "^3.5.0",
+    "ember-cli-babel": "^5.1.7",
+    "resolve": "^1.1.7"
   },
-  "author": "Jonathan kingston",
-  "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
@@ -40,16 +48,8 @@
     "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10"
   },
-  "keywords": [
-    "ember-addon",
-    "chai"
-  ],
-  "dependencies": {
-    "broccoli-funnel": "^1.0.9",
-    "broccoli-merge-trees": "^1.1.5",
-    "chai": "^3.5.0",
-    "ember-cli-babel": "^5.1.7",
-    "resolve": "^1.1.7"
+  "engines": {
+    "node": ">= 0.12.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
