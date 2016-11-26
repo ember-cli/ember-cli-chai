@@ -20,3 +20,12 @@ install:
 
 script:
   - npm test
+
+deploy:
+  provider: npm
+  email: tobias.bieniek@gmx.de
+  api_key:
+    secure: PbO0GNtqDJ3i51W15+pn5hkAMFs6scN9N6nZzKGHtlVSATk7OHC6R716PV5XAkWWvTlXU5gzmBk1Kp99CVc3EdrofAtX/F/ocq+z3j6kilt5B5UTMjSTE8F8NPtP/RSeEeYdvnwLcnVhXNQCANrUpPVAomBavCSNxETH4WH+DcM=
+  on:
+    tags: true
+    repo: ember-cli/ember-cli-chai
