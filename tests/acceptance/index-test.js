@@ -9,5 +9,6 @@ test('visiting /', withChai(function(expect) {
 
   andThen(function() {
     expect(currentURL()).to.equal('/');
+    expect(find('.test-element')).to.have.text('hello');
   });
 }));
