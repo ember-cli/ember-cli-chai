@@ -17,6 +17,7 @@ self.expect = self.chai.expect;
 
       config: self.chai.config,
       use: self.chai.use,
+      util: self.chai.util,
 
       Assertion: self.chai.Assertion,
       AssertionError: self.chai.AssertionError,
