@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-chai",
   "version": "0.1.0",
-  "description": "Ember cli addon for use of Chai.",
+  "description": "Chai assertions for Ember.js",
   "keywords": [
     "chai",
     "ember-addon"

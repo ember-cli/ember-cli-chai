@@ -1,52 +1,75 @@
-# Ember-cli-chai
 
-Ember addon wrapper for [Chaijs](https://github.com/chaijs/chai) assertion library.
+ember-cli-chai
+==============================================================================
+
+[![npm](https://img.shields.io/npm/v/ember-cli-chai.svg)](https://www.npmjs.com/package/ember-cli-chai)
+[![Build Status](https://travis-ci.org/ember-cli/ember-cli-chai.svg?branch=master)](https://travis-ci.org/ember-cli/ember-cli-chai)
+
+[Chai](http://chaijs.com/) assertions for [Ember.js](http://emberjs.com/).
+Works with both QUnit and Mocha!
 
 
-## Installation
-
-```
-ember install:addon ember-cli-chai
-```
-
-## Use
-
-**Assert**
-
-```
-import { assert } from 'chai';
-```
-
-**Expect**
+Installation
+------------------------------------------------------------------------------
 
 ```
+ember install ember-cli-chai
+```
+
+Usage
+------------------------------------------------------------------------------
+
+After installing `ember-cli-chai` you can import [Chai](http://chaijs.com/)
+from the `chai` package:
+
+```js
+import chai from 'chai';
+```
+
+of import the `expect()` function directly:
+
+```js
 import { expect } from 'chai';
 ```
 
-**Should usage warning** - by using should, you will likely cause issues with the rest of your tests.
-Should works by modifying native `Object.prototype` which will leak into every module.
-Developers should consider using `assert` or `expect` instead [Further explanation](https://github.com/switchfly/ember-cli-mocha/issues/14#issuecomment-75466055).
+Have a look at the [vendor shim](vendor/shims/chai.js) file to understand
+what else can be imported this way.
 
-## Licence
 
-The MIT License (MIT)
+### QUnit
 
-Copyright (c) 2015 Jonathan Kingston
+QUnit can be used with Chai directly, but it is recommended to use our
+`withChai()` integration:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+```js
+import { module, test } from 'qunit';
+import { withChai } from 'ember-cli-chai/qunit';
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+module('test');
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+test('it works', withChai(function(expect, assert) {
+  assert.expect(1);
+  expect(5, '5 < 10').to.be.below(10);
+}));
+```
+
+- Import the `withChai()` function from `ember-cli-chai/qunit`
+- Wrap all test functions in `withChai(...)` and add `expect` as the
+  first argument
+
+### JQuery/DOM assertions
+
+`ember-cli-chai` will automatically load
+[`chai-jquery`](https://github.com/chaijs/chai-jquery) or
+[`chai-dom`](https://github.com/nathanboktae/chai-dom) if they are listed
+as dependencies in your `package.json` file. This will enable you to write
+JQuery/DOM assertions like:
+
+```js
+expect(find('.test-element')).to.have.text('hello');
+```
+
+
+License
+------------------------------------------------------------------------------
+ember-cli-chai is licensed under the [MIT License](LICENSE.md).
