@@ -2,6 +2,7 @@ import { module, test } from 'qunit';
 import { expect } from 'chai';
 import { withChai } from 'ember-cli-chai/qunit';
 import RSVP from 'rsvp';
+import sinon from 'sinon';
 
 module('Chai.js');
 
@@ -21,6 +22,12 @@ test('it works with chai-as-promised (resolved promise)', withChai(function(expe
 
 test('it works with chai-as-promised (rejected promise)', withChai(function(expect) {
   return expect(RSVP.reject(new Error('foo'))).to.be.rejected;
+}));
+
+test('it works with sinon-chai', withChai(function(expect) {
+  let spy = sinon.spy();
+  spy();
+  expect(spy).to.have.been.called;
 }));
 
 function timeout(ms) {
