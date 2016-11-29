@@ -43,11 +43,18 @@ var asPromisedPlugin6 = {
   },
 };
 
+var sinonPlugin = {
+  name: 'sinon-chai',
+  constraint: '^2.0.0',
+  path: 'sinon-chai.js',
+};
+
 var supportedPlugins = [
   jqueryPlugin,
   domPlugin,
   asPromisedPlugin,
   asPromisedPlugin6,
+  sinonPlugin
 ];
 
 module.exports = {
