@@ -25,13 +25,17 @@
   "dependencies": {
     "broccoli-funnel": "^1.0.9",
     "broccoli-merge-trees": "^1.1.5",
+    "broccoli-rollup": "^1.0.3",
     "chai": "^3.5.0",
     "ember-cli-babel": "^5.1.7",
     "ember-cli-version-checker": "^1.1.7",
-    "resolve": "^1.1.7"
+    "resolve": "^1.1.7",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
+    "chai-as-promised": "^6.0.0",
     "chai-jquery": "^2.0.0",
     "ember-ajax": "^2.4.1",
     "ember-cli": "2.9.1",
