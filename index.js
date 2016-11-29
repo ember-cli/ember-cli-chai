@@ -6,6 +6,9 @@ var resolve = require('resolve');
 var Funnel = require('broccoli-funnel');
 var MergeTrees = require('broccoli-merge-trees');
 var VersionChecker = require('ember-cli-version-checker');
+var Rollup = require('broccoli-rollup');
+var commonjs = require('rollup-plugin-commonjs');
+var nodeResolve = require('rollup-plugin-node-resolve');
 
 var jqueryPlugin = {
   name: 'chai-jquery',
@@ -19,7 +22,33 @@ var domPlugin = {
   path: 'chai-dom.js',
 };
 
-var supportedPlugins = [jqueryPlugin, domPlugin];
+var asPromisedPlugin = {
+  name: 'chai-as-promised',
+  constraint: '<6',
+  path: 'chai-as-promised.js',
+};
+
+var asPromisedPlugin6 = {
+  name: 'chai-as-promised',
+  constraint: '>=6',
+  path: 'chai-as-promised.js',
+  rollup: {
+    entry: 'chai-as-promised.js',
+    dest: 'chai/chai-as-promised.js',
+    format: 'iife',
+    plugins: [
+      nodeResolve(),
+      commonjs(),
+    ],
+  },
+};
+
+var supportedPlugins = [
+  jqueryPlugin,
+  domPlugin,
+  asPromisedPlugin,
+  asPromisedPlugin6,
+];
 
 module.exports = {
   name: 'ember-cli-chai',
@@ -77,11 +106,18 @@ module.exports = {
 
     let basedir = this.project.root;
     this.plugins.forEach(function(plugin) {
-      var pluginPath = path.dirname(resolve.sync(plugin.name, { basedir: basedir }));
-      var pluginTree = new Funnel(pluginPath, {
-        files: [plugin.path],
-        destDir: '/chai',
-      });
+      var pluginTree;
+
+      if (plugin.rollup) {
+        pluginTree = new Rollup(__dirname + '/rollup', { rollup: plugin.rollup });
+
+      } else {
+        var pluginPath = path.dirname(resolve.sync(plugin.name, { basedir: basedir }));
+        pluginTree = new Funnel(pluginPath, {
+          files: [plugin.path],
+          destDir: '/chai',
+        });
+      }
 
       trees.push(pluginTree);
     });
