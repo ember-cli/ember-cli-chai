@@ -10,6 +10,7 @@
   "author": "Jonathan kingston",
   "files": [
     "vendor",
+    "addon",
     "index.js"
   ],
   "directories": {
