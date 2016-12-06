@@ -57,13 +57,22 @@ test('it works', withChai(function(expect, assert) {
 - Wrap all test functions in `withChai(...)` and add `expect` as the
   first argument
 
-### JQuery/DOM assertions
+### Chai plugins
 
-`ember-cli-chai` will automatically load
-[`chai-jquery`](https://github.com/chaijs/chai-jquery) or
-[`chai-dom`](https://github.com/nathanboktae/chai-dom) if they are listed
-as dependencies in your `package.json` file. This will enable you to write
-JQuery/DOM assertions like:
+`ember-cli-chai` is able to automatically load a number of popular
+[Chai plugins](http://chaijs.com/plugins/):
+
+- [`chai-jquery`](https://github.com/chaijs/chai-jquery) – JQuery assertions
+- [`chai-dom`](https://github.com/nathanboktae/chai-dom) – DOM assertions
+- [`chai-as-promised`](https://github.com/domenic/chai-as-promised) – Promise assertions
+- [`sinon-chai`](https://github.com/domenic/sinon-chai) – Sinon assertions
+
+All you have to do is install those plugins via `npm install --save-dev`.
+Once they are installed and listed as dependencies in your `package.json` file
+they will be used automatically.
+
+Using `chai-jquery` for example will enable you to write JQuery assertions
+like:
 
 ```js
 expect(find('.test-element')).to.have.text('hello');
