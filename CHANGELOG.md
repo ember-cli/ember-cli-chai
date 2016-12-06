@@ -1,5 +1,21 @@
 # Change Log
 
+## [v0.3.0](https://github.com/ember-cli/ember-cli-chai/tree/v0.3.0) (2016-12-06)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.2.0...v0.3.0)
+
+**Implemented enhancements:**
+
+- Support for sinon-chai [\#9](https://github.com/ember-cli/ember-cli-chai/issues/9)
+- Support for chai-as-promised [\#8](https://github.com/ember-cli/ember-cli-chai/issues/8)
+- Replace JSHint with ESLint [\#16](https://github.com/ember-cli/ember-cli-chai/pull/16) ([Turbo87](https://github.com/Turbo87))
+- Add support for "chai-as-promised" via "rollup" [\#15](https://github.com/ember-cli/ember-cli-chai/pull/15) ([Turbo87](https://github.com/Turbo87))
+
+**Merged pull requests:**
+
+- Update package.json to include qunit from 'addon' folder [\#17](https://github.com/ember-cli/ember-cli-chai/pull/17) ([polarctos](https://github.com/polarctos))
+- automatically import sinon-chai [\#14](https://github.com/ember-cli/ember-cli-chai/pull/14) ([Dhaulagiri](https://github.com/Dhaulagiri))
+- Cleanup plugin import code [\#13](https://github.com/ember-cli/ember-cli-chai/pull/13) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.2.0](https://github.com/ember-cli/ember-cli-chai/tree/v0.2.0) (2016-11-26)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.1.0...v0.2.0)
 
