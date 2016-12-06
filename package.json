@@ -9,8 +9,9 @@
   "license": "MIT",
   "author": "Jonathan kingston",
   "files": [
-    "vendor",
     "addon",
+    "rollup",
+    "vendor",
     "index.js"
   ],
   "directories": {
