@@ -10,9 +10,12 @@
 - Replace JSHint with ESLint [\#16](https://github.com/ember-cli/ember-cli-chai/pull/16) ([Turbo87](https://github.com/Turbo87))
 - Add support for "chai-as-promised" via "rollup" [\#15](https://github.com/ember-cli/ember-cli-chai/pull/15) ([Turbo87](https://github.com/Turbo87))
 
-**Merged pull requests:**
+**Fixed bugs:**
 
 - Update package.json to include qunit from 'addon' folder [\#17](https://github.com/ember-cli/ember-cli-chai/pull/17) ([polarctos](https://github.com/polarctos))
+
+**Merged pull requests:**
+
 - automatically import sinon-chai [\#14](https://github.com/ember-cli/ember-cli-chai/pull/14) ([Dhaulagiri](https://github.com/Dhaulagiri))
 - Cleanup plugin import code [\#13](https://github.com/ember-cli/ember-cli-chai/pull/13) ([Turbo87](https://github.com/Turbo87))
 
