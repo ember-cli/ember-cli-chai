@@ -74,8 +74,8 @@ module.exports = {
 
     // filter out `chai-dom` if `chai-jquery` is also installed as
     // having both plugins active results in conflicts
-    let domPluginIndex = this.plugins.indexOf(domPlugin);
-    let jqueryPluginIndex = this.plugins.indexOf(jqueryPlugin);
+    var domPluginIndex = this.plugins.indexOf(domPlugin);
+    var jqueryPluginIndex = this.plugins.indexOf(jqueryPlugin);
     if (jqueryPluginIndex !== -1 && domPluginIndex !== -1) {
       this.plugins.splice(domPluginIndex, 1);
     }
@@ -111,7 +111,7 @@ module.exports = {
 
     var trees = [tree, chaiTree];
 
-    let basedir = this.project.root;
+    var basedir = this.project.root;
     this.plugins.forEach(function(plugin) {
       var pluginTree;
 
