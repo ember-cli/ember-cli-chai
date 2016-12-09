@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.1](https://github.com/ember-cli/ember-cli-chai/tree/v0.3.1) (2016-12-09)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.3.0...v0.3.1)
+
+**Fixed bugs:**
+
+- Use "var" instead of "let" [\#20](https://github.com/ember-cli/ember-cli-chai/pull/20) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.3.0](https://github.com/ember-cli/ember-cli-chai/tree/v0.3.0) (2016-12-06)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.2.0...v0.3.0)
 
