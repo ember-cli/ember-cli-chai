@@ -51,6 +51,7 @@
     "ember-cli-release": "^0.2.9",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-test-loader": "^1.1.0",
+    "ember-cli-testdouble": "0.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.9.0",
     "ember-disable-prototype-extensions": "^1.1.0",
@@ -60,7 +61,8 @@
     "ember-sinon": "0.5.1",
     "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10",
-    "sinon-chai": "^2.0.0"
+    "sinon-chai": "^2.0.0",
+    "testdouble-chai": "^0.5.0"
   },
   "engines": {
     "node": ">= 0.12.0"

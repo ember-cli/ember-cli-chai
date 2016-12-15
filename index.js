@@ -49,12 +49,19 @@ var sinonPlugin = {
   path: 'sinon-chai.js',
 };
 
+var testdoublePlugin = {
+  name: 'testdouble-chai',
+  constraint: '^0.5.0',
+  path: 'testdouble-chai.js',
+};
+
 var supportedPlugins = [
   jqueryPlugin,
   domPlugin,
   asPromisedPlugin,
   asPromisedPlugin6,
-  sinonPlugin
+  sinonPlugin,
+  testdoublePlugin
 ];
 
 module.exports = {
@@ -78,6 +85,14 @@ module.exports = {
     var jqueryPluginIndex = this.plugins.indexOf(jqueryPlugin);
     if (jqueryPluginIndex !== -1 && domPluginIndex !== -1) {
       this.plugins.splice(domPluginIndex, 1);
+    }
+
+    // ensure that `sinon-chai` and `testdouble-chai` aren't both enabled,
+    // since they use the same API
+    var sinonIndex = this.plugins.indexOf(sinonPlugin);
+    var tdIndex = this.plugins.indexOf(testdoublePlugin);
+    if (sinonIndex !== -1 && tdIndex !== -1) {
+      this.plugins.splice(tdIndex, 1);
     }
   },
 
