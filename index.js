@@ -53,6 +53,7 @@ var testdoublePlugin = {
   name: 'testdouble-chai',
   constraint: '^0.5.0',
   path: 'testdouble-chai.js',
+  supportFile: 'bootstrap-td-chai.js'
 };
 
 var supportedPlugins = [
@@ -108,6 +109,10 @@ module.exports = {
 
     this.plugins.forEach(function(plugin) {
       app.import('vendor/chai/' + plugin.path, { type: 'test' });
+
+      if (plugin.supportFile) {
+        app.import('vendor/chai-plugin-support/' + plugin.supportFile, { type: 'test' });
+      }
     });
   },
 
