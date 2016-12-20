@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.3.2](https://github.com/ember-cli/ember-cli-chai/tree/v0.3.2) (2016-12-20)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.3.1...v0.3.2)
+
+**Implemented enhancements:**
+
+- Support for testdouble-chai [\#19](https://github.com/ember-cli/ember-cli-chai/issues/19)
+
+**Merged pull requests:**
+
+- Add support for testdouble-chai [\#21](https://github.com/ember-cli/ember-cli-chai/pull/21) ([alexlafroscia](https://github.com/alexlafroscia))
+
 ## [v0.3.1](https://github.com/ember-cli/ember-cli-chai/tree/v0.3.1) (2016-12-09)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.3.0...v0.3.1)
 
