@@ -53,7 +53,7 @@ var testdoublePlugin = {
   name: 'testdouble-chai',
   constraint: '^0.5.0',
   path: 'testdouble-chai.js',
-  supportFile: 'bootstrap-td-chai.js'
+  supportFile: 'testdouble-chai.js'
 };
 
 var supportedPlugins = [
