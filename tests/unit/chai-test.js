@@ -3,6 +3,7 @@ import { expect } from 'chai';
 import { withChai } from 'ember-cli-chai/qunit';
 import RSVP from 'rsvp';
 import sinon from 'sinon';
+// import td from 'testdouble';
 
 module('Chai.js');
 
@@ -29,6 +30,14 @@ test('it works with sinon-chai', withChai(function(expect) {
   spy();
   expect(spy).to.have.been.called;
 }));
+
+// DISABLED due to conflict with sinon-chai
+//
+// test('it works with testdouble-chai', withChai(function(expect) {
+//   let func = td.function();
+//   func();
+//   expect(func).to.have.been.called;
+// }));
 
 function timeout(ms) {
   return new RSVP.Promise(resolve => {
