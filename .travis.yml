@@ -23,9 +23,9 @@ script:
 
 deploy:
   provider: npm
-  email: tobias.bieniek@gmx.de
+  email: stefan.penner+ember-cli@gmail.com
   api_key:
-    secure: PbO0GNtqDJ3i51W15+pn5hkAMFs6scN9N6nZzKGHtlVSATk7OHC6R716PV5XAkWWvTlXU5gzmBk1Kp99CVc3EdrofAtX/F/ocq+z3j6kilt5B5UTMjSTE8F8NPtP/RSeEeYdvnwLcnVhXNQCANrUpPVAomBavCSNxETH4WH+DcM=
+    secure: e+NZpsOVSZ+FBv6MpPMn/UNhdPwWIC2nFNoDgEKS2NkG3sq54icnwmgZ+qCNWRqfB1ZBhWZlg5xm5MLoh7Ye5jbz50xdRMuum28I2Bejqzan4DuzoNbzL+ek0f14wahs6utcFiw3Jhj0XA4e2+Qe6hUVQRE/hzobOMPv710u6mw=
   on:
     tags: true
     repo: ember-cli/ember-cli-chai
