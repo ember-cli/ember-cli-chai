@@ -1,5 +1,23 @@
 # Change Log
 
+## [v0.4.0](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.0) (2017-05-04)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.3.2...v0.4.0)
+
+**Implemented enhancements:**
+
+- CI: Use "auto-dist-tag" for deployment [\#25](https://github.com/ember-cli/ember-cli-chai/pull/25) ([Turbo87](https://github.com/Turbo87))
+
+**Closed issues:**
+
+- Allow configuring additional plugins in package.json? [\#23](https://github.com/ember-cli/ember-cli-chai/issues/23)
+- Release as v1.0.0 [\#18](https://github.com/ember-cli/ember-cli-chai/issues/18)
+
+**Merged pull requests:**
+
+- Remove unused dependencies [\#27](https://github.com/ember-cli/ember-cli-chai/pull/27) ([Turbo87](https://github.com/Turbo87))
+- Update "ember-cli-babel" to v6.1.0 [\#26](https://github.com/ember-cli/ember-cli-chai/pull/26) ([Turbo87](https://github.com/Turbo87))
+- CI: Switch NPM deploy user to "ember-cli" [\#24](https://github.com/ember-cli/ember-cli-chai/pull/24) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.3.2](https://github.com/ember-cli/ember-cli-chai/tree/v0.3.2) (2016-12-20)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.3.1...v0.3.2)
 
