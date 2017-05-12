@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.4.1](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.1) (2017-05-12)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.4.0...v0.4.1)
+
+**Closed issues:**
+
+- Support `testdouble` without a global [\#28](https://github.com/ember-cli/ember-cli-chai/issues/28)
+
+**Merged pull requests:**
+
+- Configure tdChai shim to import td correctly [\#29](https://github.com/ember-cli/ember-cli-chai/pull/29) ([alexlafroscia](https://github.com/alexlafroscia))
+
 ## [v0.4.0](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.0) (2017-05-04)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.3.2...v0.4.0)
 
