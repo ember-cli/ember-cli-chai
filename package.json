@@ -25,6 +25,7 @@
     "test": "ember test"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "broccoli-funnel": "^1.0.9",
     "broccoli-merge-trees": "^1.1.5",
     "broccoli-rollup": "^1.0.3",
@@ -32,11 +33,12 @@
     "ember-cli-babel": "^6.1.0",
     "ember-cli-version-checker": "^1.1.7",
     "resolve": "^1.1.7",
+    "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^5.0.5",
     "rollup-plugin-node-resolve": "^2.0.0"
   },
   "devDependencies": {
-    "chai-as-promised": "^6.0.0",
+    "chai-as-promised": "^7.0.0",
     "chai-jquery": "^2.0.0",
     "ember-cli": "2.9.1",
     "ember-cli-dependency-checker": "^1.3.0",
