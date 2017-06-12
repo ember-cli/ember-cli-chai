@@ -31,7 +31,7 @@
     "broccoli-rollup": "^1.0.3",
     "chai": "^3.5.0",
     "ember-cli-babel": "^6.1.0",
-    "ember-cli-version-checker": "^1.1.7",
+    "ember-cli-version-checker": "^2.0.0",
     "resolve": "^1.1.7",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^5.0.5",
