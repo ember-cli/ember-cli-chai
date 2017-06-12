@@ -7,17 +7,14 @@ sudo: false
 
 cache:
   yarn: true
-  directories:
-    - node_modules
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=$HOME/.yarn/bin:$PATH
-  - yarn global add phantomjs-prebuilt bower
+  - yarn global add phantomjs-prebuilt
 
 install:
   - yarn install --no-lockfile
-  - bower install
 
 script:
   - yarn test
