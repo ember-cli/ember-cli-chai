@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-chai",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Chai assertions for Ember.js",
   "keywords": [
     "chai",
