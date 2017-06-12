@@ -35,7 +35,7 @@
     "resolve": "^1.1.7",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^5.0.5",
-    "rollup-plugin-node-resolve": "^2.0.0"
+    "rollup-plugin-node-resolve": "^3.0.0"
   },
   "devDependencies": {
     "chai-as-promised": "^7.0.0",
