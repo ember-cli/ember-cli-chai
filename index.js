@@ -9,6 +9,7 @@ var VersionChecker = require('ember-cli-version-checker');
 var Rollup = require('broccoli-rollup');
 var commonjs = require('rollup-plugin-commonjs');
 var nodeResolve = require('rollup-plugin-node-resolve');
+var babel = require('rollup-plugin-babel');
 
 var jqueryPlugin = {
   name: 'chai-jquery',
@@ -30,7 +31,7 @@ var asPromisedPlugin = {
 
 var asPromisedPlugin6 = {
   name: 'chai-as-promised',
-  constraint: '>=6',
+  constraint: '^6 || ^7',
   path: 'chai-as-promised.js',
   rollup: {
     entry: 'chai-as-promised.js',
@@ -39,6 +40,9 @@ var asPromisedPlugin6 = {
     plugins: [
       nodeResolve(),
       commonjs(),
+      babel({
+        presets: [["es2015", { loose: true, modules: false }]],
+      }),
     ],
   },
 };
