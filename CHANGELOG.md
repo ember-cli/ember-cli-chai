@@ -1,5 +1,14 @@
 # Change Log
 
+## [v0.4.2](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.2) (2017-06-12)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.4.1...v0.4.2)
+
+**Implemented enhancements:**
+
+- Support ember-cli-chai@7 [\#31](https://github.com/ember-cli/ember-cli-chai/issues/31)
+- Use yarn instead of npm [\#35](https://github.com/ember-cli/ember-cli-chai/pull/35) ([Turbo87](https://github.com/Turbo87))
+- Add support for "chai-as-promised@7" [\#34](https://github.com/ember-cli/ember-cli-chai/pull/34) ([Turbo87](https://github.com/Turbo87))
+
 ## [v0.4.1](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.1) (2017-05-12)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.4.0...v0.4.1)
 
