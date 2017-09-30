@@ -42,7 +42,7 @@ var asPromisedPlugin6 = {
       nodeResolve(),
       commonjs(),
       babel({
-        presets: [["es2015", { loose: true, modules: false }]],
+        presets: [["env", { loose: true, modules: false }]],
       }),
     ],
   },
