@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.4.3](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.3) (2017-10-02)
+[Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.4.2...v0.4.3)
+
+**Implemented enhancements:**
+
+- Update dependencies [\#36](https://github.com/ember-cli/ember-cli-chai/pull/36) ([Turbo87](https://github.com/Turbo87))
+
+**Merged pull requests:**
+
+- Switch from babel-preset-es2015 to babel-preset-env [\#38](https://github.com/ember-cli/ember-cli-chai/pull/38) ([cherewaty](https://github.com/cherewaty))
+
 ## [v0.4.2](https://github.com/ember-cli/ember-cli-chai/tree/v0.4.2) (2017-06-12)
 [Full Changelog](https://github.com/ember-cli/ember-cli-chai/compare/v0.4.1...v0.4.2)
 
