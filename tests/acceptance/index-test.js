@@ -1,16 +1,18 @@
-import { test } from 'qunit';
+import { describe, it } from 'mocha';
+import { setupAcceptanceTest } from 'ember-mocha';
 import { expect } from 'chai';
-import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
 
-moduleForAcceptance('Acceptance | index');
+import Application from '../../app';
 
-test('visiting /', function(assert) {
-  assert.expect(0);
+describe('Acceptance | index', function() {
+  setupAcceptanceTest({ Application });
 
-  visit('/');
+  it('visiting /', function() {
+    visit('/');
 
-  andThen(function() {
-    expect(currentURL()).to.equal('/');
-    expect(find('.test-element')).to.have.text('hello');
+    andThen(function() {
+      expect(currentURL()).to.equal('/');
+      expect(find('.test-element')).to.have.text('hello');
+    });
   });
 });
