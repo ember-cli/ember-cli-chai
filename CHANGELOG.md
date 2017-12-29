@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.5.0-beta.1 (2017-12-29)
+
+#### :boom: Breaking Change
+* [#41](https://github.com/ember-cli/ember-cli-chai/pull/41) Update "chai" to v4.0.0. ([@Turbo87](https://github.com/Turbo87))
+* [#40](https://github.com/ember-cli/ember-cli-chai/pull/40) Remove QUnit support. ([@Turbo87](https://github.com/Turbo87))
+
+#### :memo: Documentation
+* [#39](https://github.com/ember-cli/ember-cli-chai/pull/39) Use `lerna-changelog` to generate changelog. ([@Turbo87](https://github.com/Turbo87))
+
+#### :house: Internal
+* [#43](https://github.com/ember-cli/ember-cli-chai/pull/43) Use `ember-cli-mocha` instead of `ember-cli-qunit`. ([@Turbo87](https://github.com/Turbo87))
+* [#42](https://github.com/ember-cli/ember-cli-chai/pull/42) Update `ember-cli-babel` and `ember-cli`. ([@Turbo87](https://github.com/Turbo87))
+
+#### Committers: 1
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
+
+
 ## v0.4.3 (2017-10-02)
 
 #### :rocket: Enhancement
