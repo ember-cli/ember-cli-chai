@@ -25,7 +25,7 @@ from the `chai` package:
 import chai from 'chai';
 ```
 
-of import the `expect()` function directly:
+or import the `expect()` function directly:
 
 ```js
 import { expect } from 'chai';
