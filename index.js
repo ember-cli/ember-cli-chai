@@ -50,7 +50,7 @@ var asPromisedPlugin6 = {
 
 var sinonPlugin = {
   name: 'sinon-chai',
-  constraint: '^2.0.0',
+  constraint: '>=2.0.0',
   path: 'sinon-chai.js',
 };
 
