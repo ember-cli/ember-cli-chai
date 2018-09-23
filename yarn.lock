@@ -4059,8 +4059,8 @@ load-json-file@^1.0.0:
     strip-bom "^2.0.0"
 
 loader.js@^4.2.3:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/loader.js/-/loader.js-4.4.1.tgz#f6a4c3c296170685cb7cd7b3e7aa6d5c846c0518"
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/loader.js/-/loader.js-4.7.0.tgz#a1a52902001c83631efde9688b8ab3799325ef1f"
 
 locate-path@^2.0.0:
   version "2.0.0"
