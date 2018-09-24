@@ -26,14 +26,15 @@
     "test": "ember test"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "broccoli-funnel": "^2.0.1",
     "broccoli-merge-trees": "^3.0.1",
     "broccoli-rollup": "^2.1.1",
     "chai": "^4.1.2",
     "ember-cli-version-checker": "^2.0.0",
     "resolve": "^1.1.7",
-    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.1.8",
     "rollup-plugin-node-resolve": "^3.0.0"
   },

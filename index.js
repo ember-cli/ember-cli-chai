@@ -44,7 +44,7 @@ const asPromisedPlugin6 = {
       nodeResolve(),
       commonjs(),
       babel({
-        presets: [["env", { loose: true, modules: false }]],
+        presets: [["@babel/preset-env", { loose: true, modules: false }]],
       }),
     ],
   },
