@@ -35,9 +35,11 @@ var asPromisedPlugin6 = {
   constraint: '^6 || ^7',
   path: 'chai-as-promised.js',
   rollup: {
-    entry: 'chai-as-promised.js',
-    dest: 'chai/chai-as-promised.js',
-    format: 'iife',
+    input: 'chai-as-promised.js',
+    output: {
+      file: 'chai/chai-as-promised.js',
+      format: 'iife',
+    },
     plugins: [
       nodeResolve(),
       commonjs(),
