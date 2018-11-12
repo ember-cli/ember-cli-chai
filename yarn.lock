@@ -2191,8 +2191,8 @@ chai-as-promised@^7.0.0:
     check-error "^1.0.2"
 
 chai-jquery@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/chai-jquery/-/chai-jquery-2.0.0.tgz#0f43042308dd746332bd98164aaef4a4f45ba167"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/chai-jquery/-/chai-jquery-2.1.0.tgz#ce40fb5d853e7886688787f16d14cd9595388563"
 
 chai@^4.1.2:
   version "4.2.0"
