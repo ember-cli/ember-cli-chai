@@ -32,7 +32,7 @@
     "broccoli-merge-trees": "^3.0.1",
     "broccoli-rollup": "^2.1.1",
     "chai": "^4.1.2",
-    "ember-cli-version-checker": "^3.1.0",
+    "ember-cli-version-checker": "^3.1.1",
     "resolve": "^1.10.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.1",
