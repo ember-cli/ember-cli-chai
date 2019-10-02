@@ -1,3 +1,4 @@
+import { currentURL, visit } from '@ember/test-helpers';
 import { describe, it } from 'mocha';
 import { setupAcceptanceTest } from 'ember-mocha';
 import { expect } from 'chai';
@@ -7,12 +8,10 @@ import Application from '../../app';
 describe('Acceptance | index', function() {
   setupAcceptanceTest({ Application });
 
-  it('visiting /', function() {
-    visit('/');
+  it('visiting /', async function() {
+    await visit('/');
 
-    andThen(function() {
-      expect(currentURL()).to.equal('/');
-      expect(find('.test-element')).to.have.text('hello');
-    });
+    expect(currentURL()).to.equal('/');
+    expect(find('.test-element')).to.have.text('hello');
   });
 });
