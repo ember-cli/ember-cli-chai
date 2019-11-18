@@ -39,6 +39,7 @@
     "rollup-plugin-node-resolve": "^4.2.4"
   },
   "devDependencies": {
+    "@ember/jquery": "^1.1.0",
     "chai-as-promised": "^7.0.0",
     "chai-jquery": "^2.0.0",
     "ember-cli": "~3.9.0",
