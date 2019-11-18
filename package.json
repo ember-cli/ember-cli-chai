@@ -26,7 +26,7 @@
     "test": "ember test"
   },
   "dependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.6.0",
     "broccoli-funnel": "^2.0.2",
     "broccoli-merge-trees": "^3.0.1",
