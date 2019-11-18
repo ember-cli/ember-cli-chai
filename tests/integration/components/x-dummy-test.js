@@ -1,23 +1,25 @@
 import { describe, it } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { setupRenderingTest } from 'ember-mocha';
+import { render } from '@ember/test-helpers';
 import { expect } from 'chai';
 import hbs from 'htmlbars-inline-precompile';
+import $ from 'jquery';
 
 describe('Integration | Component | x dummy', function() {
-  setupComponentTest('x-dummy', { integration: true });
+  setupRenderingTest();
 
-  it('renders', function() {
-    this.render(hbs`{{x-dummy}}`);
+  it('renders', async function() {
+    await render(hbs`{{x-dummy}}`);
 
-    expect(this.$('.dummy'), 'has "foo" text').to.have.text('foo');
+    expect($('.dummy'), 'has "foo" text').to.have.text('foo');
   });
 
-  it('renders with attribute', function() {
+  it('renders with attribute', async function() {
     this.set('foo', 'bar');
 
-    this.render(hbs`{{x-dummy foo=foo}}`);
+    await render(hbs`{{x-dummy foo=foo}}`);
 
-    expect(this.$('.dummy'), 'has "bar" text').to.have.text('bar');
-    expect(this.$('.dummy'), 'has "foo" class').to.have.class('foo');
+    expect($('.dummy'), 'has "bar" text').to.have.text('bar');
+    expect($('.dummy'), 'has "foo" class').to.have.class('foo');
   });
 });

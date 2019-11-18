@@ -39,6 +39,7 @@
     "rollup-plugin-node-resolve": "^4.2.4"
   },
   "devDependencies": {
+    "@ember/jquery": "^1.1.0",
     "chai-as-promised": "^7.0.0",
     "chai-jquery": "^2.0.0",
     "ember-cli": "~3.9.0",
@@ -48,10 +49,11 @@
     "ember-cli-htmlbars": "^3.1.0",
     "ember-cli-htmlbars-inline-precompile": "^2.0.0",
     "ember-cli-inject-live-reload": "^2.0.1",
-    "ember-cli-mocha": "^0.15.0",
     "ember-cli-shims": "^1.2.0",
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-load-initializers": "^2.1.0",
+    "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-mocha": "^0.16.1",
     "ember-resolver": "^5.2.1",
     "ember-sinon": "~3.1.0",
     "ember-source": "~3.12.0",

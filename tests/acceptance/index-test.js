@@ -1,18 +1,16 @@
 import { describe, it } from 'mocha';
-import { setupAcceptanceTest } from 'ember-mocha';
+import { setupApplicationTest } from 'ember-mocha';
+import { visit, currentURL, find } from '@ember/test-helpers';
 import { expect } from 'chai';
-
-import Application from '../../app';
+import $ from 'jquery';
 
 describe('Acceptance | index', function() {
-  setupAcceptanceTest({ Application });
+  setupApplicationTest();
 
-  it('visiting /', function() {
-    visit('/');
+  it('visiting /', async function() {
+    await visit('/');
 
-    andThen(function() {
-      expect(currentURL()).to.equal('/');
-      expect(find('.test-element')).to.have.text('hello');
-    });
+    expect(currentURL()).to.equal('/');
+    expect($(find('.test-element'))).to.have.text('hello');
   });
 });
