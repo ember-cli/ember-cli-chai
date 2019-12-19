@@ -29,7 +29,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "broccoli-funnel": "^2.0.2",
-    "broccoli-merge-trees": "^3.0.1",
+    "broccoli-merge-trees": "^4.0.0",
     "broccoli-rollup": "^4.1.1",
     "chai": "^4.1.2",
     "ember-cli-version-checker": "^3.1.3",
