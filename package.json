@@ -58,7 +58,7 @@
     "ember-source": "~3.15.0",
     "lerna-changelog": "^0.8.3",
     "loader.js": "^4.2.3",
-    "sinon-chai": "^3.0.0",
+    "sinon-chai": "^3.4.0",
     "testdouble-chai": "^0.5.0"
   },
   "engines": {

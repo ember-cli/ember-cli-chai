@@ -6842,9 +6842,10 @@ silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0, silent-error@^1.1
   dependencies:
     debug "^2.2.0"
 
-sinon-chai@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.3.0.tgz#8084ff99451064910fbe2c2cb8ab540c00b740ea"
+sinon-chai@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/sinon-chai/-/sinon-chai-3.4.0.tgz#06fb88dee80decc565106a3061d380007f21e18d"
+  integrity sha512-BpVxsjEkGi6XPbDXrgWUe7Cb1ZzIfxKUbu/MmH5RoUnS7AXpKo3aIYIyQUg0FMvlUL05aPt7VZuAdaeQhEnWxg==
 
 sinon@^7.1.1:
   version "7.1.1"
