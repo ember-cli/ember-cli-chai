@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
     "broccoli-funnel": "^2.0.2",
     "broccoli-merge-trees": "^3.0.1",
     "broccoli-rollup": "^4.1.1",
