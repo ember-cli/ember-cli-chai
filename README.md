@@ -7,6 +7,26 @@ ember-cli-chai
 
 [Chai](http://chaijs.com/) assertions for [Ember.js](http://emberjs.com/).
 
+Deprecated
+------------------------------------------------------------------------------
+
+This package is **deprecated**. Please use [ember-auto-import](https://github.com/ef4/ember-auto-import) to use chai and chai plugins directly. If you'd like to use chai, or were previously using ember-cli-chai, follow these instructions to use chai in your app:
+
+Add `ember-auto-import` and `chai` to your project:
+
+`ember install ember-auto-import chai`
+
+Next, if you are using any plugins, add the following to `tests/test-helper.js` _before_ calling `start` from `ember-mocha` to ensure chai has loaded them:
+
+```javascript
+// tests/test-helper.js
+import { start } from 'ember-mocha';
+import chai from 'chai';
+import chaiDom from 'chai-dom';
+chai.use(chaiDom);
+start();
+```
+
 
 Installation
 ------------------------------------------------------------------------------
